@@ -1,0 +1,35 @@
+
+[
+    {
+      "title": "HTML",
+      "imageSrc": "/assets/skills/html.png"
+    },
+    {
+      "title": "CSS",
+      "imageSrc": "/assets/skills/css.png"
+    },
+    {
+      "title": "Java Script",
+      "imageSrc": "/assets/skills/js.png"
+    },
+    {
+      "title": "React",
+      "imageSrc": "/assets/skills/react.png"
+    },
+    {
+      "title": "Cpp",
+      "imageSrc": "/assets/skills/cpp.png"
+    },
+    {
+      "title": "Java",
+      "imageSrc": "/assets/skills/java.png"
+    },
+    {
+      "title": "PostgreSQL",
+      "imageSrc": "/assets/skills/postgresql.png"
+    },
+    {
+      "title": "Python",
+      "imageSrc": "/assets/skills/python.png"
+    }
+  ]

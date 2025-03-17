@@ -1,0 +1,30 @@
+
+[
+    {
+      "role": "",
+      "organisation": "Dharmsinh Desai University",
+      "startDate": "Aug, 2023",
+      "endDate": "May,2027",
+      "experiences": ["Information Tecnology" , "Bachelor of Engineering (B-Tech)"],
+      "imageSrc": "/assets/history/ddu.png"
+    },
+    {
+      "role": "",
+      "organisation": "Coding Seekho",
+      "startDate": "Jan, 2024",
+      "endDate": "Dec, 2024",
+      "experiences": ["I purchased Course","Learned many languages ", "JS ,MERN Stack, PostgreSQL"],
+      "imageSrc": "/assets/history/CodingSeekho.png"
+    },
+    {
+      "role": "InternShip , ",
+      "organisation": "Humming Byte",
+      "startDate": "May, 2025",
+      "endDate": "June, 2025",
+      "experiences": [
+        "I crack the Internship",
+        "I leraned lots of things about industry."
+      ],
+      "imageSrc": "/assets/history/HummingByte.png"
+    }
+  ]
