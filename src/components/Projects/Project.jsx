@@ -1,4 +1,4 @@
-import projects from "../../data/project.json";
+import projects from "../../Data/project.json";
 import { ProjectCard } from "./ProjectCard";
 
 import styles from "./Project.module.css"
