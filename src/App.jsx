@@ -1,6 +1,6 @@
 import styles from "./app.module.css"
 import { Navbar } from "./components/Navbar/Navbar"
-import { Hero } from "./components/Hero/hero"
+import { Hero } from "./components/Hero/Hero"
 import { About } from "./components/About/About"
 import { Experience } from "./components/Experience/Experience"
 import { Project } from "./components/Projects/project"
