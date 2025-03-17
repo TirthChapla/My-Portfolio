@@ -37,7 +37,7 @@ export const Hero = () => {
         </a>
       </div>
       <img
-        src="/assets/hero/tirth.png" 
+        src="./assets/hero/tirth.png" 
         alt="Tirth Chapla"
         className={styles.heroImg}
       />
