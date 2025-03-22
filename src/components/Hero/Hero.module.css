@@ -99,7 +99,23 @@
   z-index: 0;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 830px) 
+{
+
+  .description
+  {
+    font-size: 20px;
+  }
+  .heroImg
+  {
+    width:85%;
+  }
+  .title
+  {
+    font-size: 43px;
+    margin-bottom: 15px;
+    margin-top: 50px;
+  }
   .container {
     flex-direction: column-reverse;
   }
