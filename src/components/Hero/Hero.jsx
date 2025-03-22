@@ -31,7 +31,7 @@ export const Hero = () => {
       <div className={styles.content}>
         <h1 className={styles.title}>Hi, I'm Tirth</h1>
         <p className={styles.description}>I'm currently learning React</p>
-        <a href="Tirth_resume.pdf" download="Tirth Resume.pdf" className={styles.resumeBtn}>
+        <a href="Tirth_resume.pdf" download="TirthResume.pdf" className={styles.resumeBtn}>
           Resume
         </a>
       </div>
