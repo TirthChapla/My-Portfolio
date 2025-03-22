@@ -22,9 +22,8 @@
 // };
 
 import React from "react";
-
 import styles from "./Hero.module.css";
-import tirth from './assets/hero/tirth.png';
+// import tirth from "../../assets/hero/tirth.png";
 
 export const Hero = () => {
   return (
@@ -37,8 +36,7 @@ export const Hero = () => {
         </a>
       </div>
       <img
-        src={tirth} 
-        
+        src="/assets/hero/tirth.png"  
         alt="Tirth Chapla"
         className={styles.heroImg}
       />
