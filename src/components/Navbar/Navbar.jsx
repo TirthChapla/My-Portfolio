@@ -24,7 +24,7 @@ export const Navbar = () =>
             borderColor="red"
             animationDuration={2}
             pauseBetweenAnimations={1}
-            />
+    />
 
         <div className={styles.menu} >
             <img className={styles.menuBtn} src={menuOpen ?"../../../assets/nav/closeIcon.png" : "../../../assets/nav/menuIcon.png"} 
@@ -36,9 +36,14 @@ export const Navbar = () =>
                 <li><a href="#About">About</a></li>
                 <li><a href="#Experience">Experience</a></li>
                 <li><a href="#Project">Project</a></li>
+                <li><a href="#Achievement">Achievements</a></li>
                 <li><a href="#Contact">Contact</a></li>
             </ul>
         </div>
 
     </nav>)
 }
+
+
+
+

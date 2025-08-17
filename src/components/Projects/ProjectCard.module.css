@@ -1,6 +1,169 @@
 @import "../../vars.css";
 
-.container {
+
+/* outer window frame (dark thin) */
+.window {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.04);
+  box-shadow: 0 6px 18px rgba(2,6,23,0.5);
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 2rem; /* Add this line for spacing between cards */
+
+}
+
+/* mac top bar */
+.windowBar{
+  height: 38px;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  background: rgba(255,255,255,0.02);
+  border-bottom: 1px solid rgba(255,255,255,0.02);
+}
+
+/* traffic lights */
+.dot {
+  display:inline-block;
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  margin-right:8px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.25) inset;
+}
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
+
+/* main horizontal card area */
+.card {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(10,14,30,0.7), rgba(6,10,25,0.75));
+}
+
+/* left column (text) */
+.left {
+  flex: 1;
+  min-width: 280px;
+}
+
+.title {
+  font-size: 1.25rem;
+  margin: 0 0 0.6rem 0;
+  color: #e6eef9;
+  font-weight: 700;
+}
+
+.description {
+  margin: 0 0 1rem 0;
+  color: rgba(230,238,249,0.8);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  max-width: 60ch;
+}
+
+/* badges */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.6rem;
+}
+
+.skillPill {
+  background: rgba(255,255,255,0.03);
+  color: #dbeafe;
+  padding: 0.28rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  border: 1px solid rgba(255,255,255,0.03);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.01) inset;
+}
+
+/* right column (image + buttons) */
+.right {
+  width: 350px; /* fixed-ish so layout stays horizontal */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.imageWrapper {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.03);
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.05));
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+/* buttons row */
+.buttons {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.demoBtn, .sourceBtn {
+  flex: 1;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.6rem 0.9rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  transition: transform .14s ease, box-shadow .14s ease;
+  box-shadow: 0 6px 12px rgba(2,6,23,0.45);
+}
+
+/* primary demo (left) */
+.demoBtn {
+  background: linear-gradient(180deg, #7c8cf8, #5563d9);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.04);
+}
+.demoBtn:hover { transform: translateY(-3px); }
+
+/* secondary code (right) */
+.sourceBtn {
+  background: linear-gradient(180deg, #9b8df8, #6f59d9);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.04);
+}
+.sourceBtn:hover { transform: translateY(-3px); }
+
+/* responsive: stack on small screens */
+@media (max-width: 880px) {
+  .card {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .right {
+    width: 100%;
+    align-items: stretch;
+  }
+  .image {
+    height: 220px;
+  }
+}
+
+
+/* .container {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
@@ -59,4 +222,4 @@
   border-radius: 100px;
   background: var(--color-primary);
   padding: 1px 22px;
-}
+} */

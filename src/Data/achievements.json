@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "image": "/assets/achievement/internship.png",
+    "title": "Summer Internship",
+    "description": "I worked on the java base project smart result."
+  },
+  {
+    "id": 2,
+    "image": "/assets/achievement/aws.jpeg",
+    "title": "AWS Cloud Foundation",
+    "description": "I learned the fundamentals of AWS cloud services."
+  },
+  {
+    "id": 3,
+    "image": "/assets/achievement/NCAT2024.png",
+    "title": "NCAT Aptitude Test",
+    "description": "I secured 78.4 in all India Category 1"
+  },
+ {
+    "id": 4,
+    "image": "/assets/achievement/50dayLeetcode.png",
+    "title": "50 Days of LeetCode",
+    "description": "I completed 50 days of LeetCode challenges."
+  },
+  {
+    "id": 5,
+    "image": "/assets/achievement/java_codechef.jpeg",
+    "title": "Learn Java Basics",
+    "description": "I completed the Learn Java Basics course on CodeChef."
+  },
+  {
+    "id": 6,
+    "image": "/assets/achievement/JAVA_SCRIPT.png",
+    "title": "Learn JavaScript",
+    "description": "I completed the Learn JavaScript course on Coding Sikho."
+  }
+]

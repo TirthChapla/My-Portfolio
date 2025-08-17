@@ -1,0 +1,175 @@
+/* Achievement.module.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #05152d; /* dark navy background */
+  padding: 50px 20px;
+  color: var(--color-text, #ffffff);
+}
+
+.title {
+  color: var(--color-text, #ffffff);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+  text-align: left;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Center the cards horizontally */
+  width: 100%;
+  max-width: 1100px;
+}
+
+.card {
+  background-color: #0d2538;
+  border-radius: 12px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 260px;
+  height: 260px;
+  margin-bottom: 15px;
+  border-radius: 8px; /* Slightly rounded corners, not a circle */
+  object-fit: cover; /* Makes sure the image fills the area nicely */
+}
+
+.card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #a8b2d1;
+}
+
+
+.viewButton {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #6ca0ff; /* Light bluish text */
+  font-weight: bold;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 1rem auto; /* Center the button */
+}
+
+.viewButton:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+
+/* Modal background */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal content */
+.modalContent {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+/* Full image */
+.fullImage {
+  max-width: 80vw; /* 80% of viewport width */
+  max-height: 80vh; /* 80% of viewport height */
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+/* Close button */
+.closeButton {
+  position: absolute;
+  top: -40px;
+  right: -10px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+
+
+/* GitHub Calendar Section */
+.githubSection {
+  margin-top: 60px;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.githubHeading {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-text, #ffffff);
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.githubHeading .purple {
+  color: #c084f5;
+}
+
+.githubCalendar {
+  background-color: #0d2538;
+  padding: 20px;
+  border-radius: 12px;
+  overflow-x: auto;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title {
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .githubHeading {
+    text-align: left;
+    padding-left: 10px;
+  }
+}

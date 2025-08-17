@@ -1,158 +1,489 @@
-@import "../../vars.css";
-
-.container {
-  color: var(--color-text);
-  margin-top: 79px;
-  margin-left: 10%;
-  margin-right: 10%;
+/* .section {
+  padding: 2rem 0;
 }
 
 .title {
-  color: var(--color-text);
-  font-size: 35px;
-  font-weight: 700;
-  letter-spacing: 1.75px;
-  text-transform: uppercase;
-  margin-bottom: 45px;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.timeline {
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: #ccc;
+  transform: translateX(-50%);
+}
+
+.timelineItem {
+  display: flex;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.left {
+  flex-direction: row-reverse;
+}
+
+.iconWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  background: #ae944f;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.date {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #666;
 }
 
 .content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 14px;
+  background: #f4f4f4;
+  padding: 1rem;
+  border-radius: 6px;
+  position: relative;
+  width: 40%;
 }
 
-.skills {
-  width: 45%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 37px;
+.left .content {
+  margin-right: auto;
 }
 
-.skill {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 11px;
+.right .content {
+  margin-left: auto;
 }
 
-.skillImageContainer {
+.imageWrapper {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.orgImage {
+  max-width: 80px;
+  height: auto;
+}
+
+.experienceList {
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+.experienceList li {
+  margin-bottom: 0.3rem;
+} */
+
+
+
+/* :root {
+  --color-text: #fff;
+  --color-primary: #576cbc;
+  --color-secondary: #19376d;
+  --color-dark: #0b2447;
+  --color-bg: #05152d;
+}
+
+.timelineContainer {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  padding: 40px 20px;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 4px;
   background-color: var(--color-secondary);
-  border-radius: 100%;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timelineItem {
+  padding: 20px 40px;
+  position: relative;
+  width: 50%;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.content {
+  padding: 20px;
+  background-color: var(--color-dark);
+  border: 2px solid var(--color-primary);
+  border-radius: 6px;
+  position: relative;
+  transition: border 0.3s ease;
+}
+
+.content:hover {
+  animation: borderRotate 1.5s linear infinite;
+}
+
+.logoWrapper {
+  position: absolute;
+  top: 20px;
+  left: calc(50% - 25px);
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-bg);
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 120px;
-  height: 120px;
+  z-index: 1;
 }
 
-.skillImageContainer img {
-  width: 75px;
+.logoWrapper img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
 }
 
-.skill p {
-  font-size: 25px;
-  font-family: var(--font-roboto);
-  font-weight: 500;
+.date {
+  position: absolute;
+  top: 30px;
+  font-size: 12px;
+  color: #aaa;
 }
 
-.history {
-  width: 45%;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+.left .date {
+  right: -120px;
 }
 
-.historyItem {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 17px;
-  background: #19376d;
-  background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
-  border-radius: 10px;
-  padding: 24px;
+.right .date {
+  left: -120px;
 }
 
-.historyItem img {
-  width: 50px;
-  margin-top: -55px;
+@keyframes borderRotate {
+  0% {
+    border-color: var(--color-primary);
+  }
+  25% {
+    border-color: var(--color-secondary);
+  }
+  50% {
+    border-color: var(--color-dark);
+  }
+  75% {
+    border-color: var(--color-secondary);
+  }
+  100% {
+    border-color: var(--color-primary);
+  }
+} */
+
+
+
+
+/* Experience.module.css */
+
+.timelineContainer {
+    width: 100%;
+    padding: 50px 20px;
+    background: #05152d;
+    color: white;
+    min-height: 100vh;
 }
 
-.historyItemContainer
-{
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 80px;  /* Increased from 50px */
+    font-weight: bold;
+    color: white;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Central vertical line */
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    background-color: #3498db;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+    z-index: 1;
+}
+
+.timelineItem {
+    padding: 20px 40px;
+    position: relative;
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+.timelineItem.left {
+    left: 0;
+}
+
+.timelineItem.right {
+    left: 50%;
+}
+
+.content {
+    padding: 25px;
+    background-color: #1b263b;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #3498db;
+    font-weight: bold;
+}
+
+.content ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.content li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.content li::before {
+    content: "•";
+    color: #3498db;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Date positioning - same distance from vertical line as cards */
+.date {
+    position: absolute;
+    background: #3498db;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    white-space: nowrap;
+    z-index: 3;
+    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+    top: -35px;
+}
+
+/* Position date labels - equal distance from vertical line as cards */
+.timelineItem.left .date {
+    right: 40px;  /* Same distance as card padding from vertical line */
+}
+
+.timelineItem.right .date {
+    left: 40px;   /* Same distance as card padding from vertical line */
+}
+
+/* Logo positioning - on the timeline line */
+.logoWrapper {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: #0d1b2a;
+    border-radius: 50%;
+    border: 4px solid #3498db;
     display: flex;
-  flex-direction: column;
-  align-items: left;
-}
-
-
-.historyItemDetails 
-{
-    margin: 10px;
-  font-family: var(--font-roboto);
-}
-
-.historyItemDetails h3 
-{
-  font-size: 30px;
-  font-weight: 500;
-}
-
-.historyItemDetails p {
-  font-size: 20px;
-  font-weight: 300;
-}
-
-.historyItemDetails ul {
-  margin-top: 6px;
-  list-style-position: inside;
-  font-size: 25px;
-  list-style-type: disc;
-  margin-left: 17px;
-}
-
-@media screen and (max-width: 830px) {
-  .content {
-    flex-direction: column;
     align-items: center;
-    gap: 34px;
-  }
-
-  .skills {
-    width: 100%;
-    flex-direction: row;
     justify-content: center;
-  }
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.4s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
 
-  .history {
-    width: 100%;
-    gap: 9px;
-  }
-  .historyItem
-  {
-    margin-top: 40px;
-  }
-  .historyItem img
-  {
-    margin-top: -116px;
-  }
-  .history h3
-  {
-    color: rgb(234, 160, 63);
-    font-size: 25px;
-    font-weight: 700;
-    padding-bottom: 2%;
-  }
-  .history p 
-  {
-    font-size: 17px;
-    padding-bottom: 3%;
-  }
-  .history li 
-  {
-    font-size: 20px;
-    padding-bottom: 3%;
-  }
+.logoWrapper:hover {
+    transform: translateY(-50%) scale(1.1);
+    border-color: #2ecc71;
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.5);
+}
+
+/* Position logos on the central timeline line */
+.timelineItem.left .logoWrapper {
+    right: -80px;
+}
+
+.timelineItem.right .logoWrapper {
+    left: -80px;
+}
+
+.logoWrapper img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* Responsive design for mobile */
+@media screen and (max-width: 768px) {
+    /* Move vertical line to left side */
+    .timeline::after {
+        left: 40px;
+        margin-left: -2px;
+    }
+
+    /* All cards on right side - equal distance from vertical line */
+    .timelineItem {
+        width: calc(100% - 120px) !important;
+        left: 120px !important;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 40px;
+    }
+
+    /* Center logos exactly on the vertical line */
+    .timelineItem.left .logoWrapper,
+    .timelineItem.right .logoWrapper {
+        left: -70px !important;  /* Centers 60px logo on 40px line position */
+        right: auto;
+        width: 60px;
+        height: 60px;
+        border-width: 3px;
+        /* Remove hover animations on mobile */
+        transition: none;
+    }
+
+    .timelineItem.left .logoWrapper:hover,
+    .timelineItem.right .logoWrapper:hover {
+        transform: translateY(-50%);
+        border-color: #3498db;
+        box-shadow: none;
+    }
+
+    .logoWrapper img {
+        width: 35px;
+        height: 35px;
+    }
+
+    /* Position dates with equal spacing from vertical line as cards */
+    .timelineItem.left .date,
+    .timelineItem.right .date {
+        left: 20px !important;  /* Same distance as cards from vertical line */
+        right: auto;
+        top: -20px;
+        transform: none;
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    .content {
+        margin-left: 0;
+        font-size: 1rem;
+    }
+
+    .content h3 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .heading {
+        font-size: 2rem;
+        margin-bottom: 60px;  /* Increased spacing for mobile */
+    }
+
+    .timelineContainer {
+        padding: 30px 15px;
+    }
+}
+
+/* Extra small screens */
+@media screen and (max-width: 480px) {
+    .timeline::after {
+        left: 30px;
+    }
+
+    .timelineItem {
+        width: calc(100% - 90px) !important;
+        left: 90px !important;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .timelineItem.left .logoWrapper,
+    .timelineItem.right .logoWrapper {
+        left: -55px !important;  /* Centers 50px logo on 30px line position */
+        width: 50px;
+        height: 50px;
+    }
+
+    .logoWrapper img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .timelineItem.left .date,
+    .timelineItem.right .date {
+        left: 15px !important;  /* Same distance as cards from vertical line */
+        font-size: 0.75rem;
+        padding: 4px 10px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .heading {
+        font-size: 1.8rem;
+        margin-bottom: 80px;  /* Increased spacing for small screens */
+    }
+
+    .timelineContainer {
+        padding: 20px 10px;
+    }
 }

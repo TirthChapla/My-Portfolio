@@ -37,6 +37,8 @@
   font-size: 30px;
   font-family: var(--font-roboto);
   margin-bottom: 52px;
+  font-weight: 700;
+  color: rgb(241, 172, 13);
 }
 
 .resumeBtn {

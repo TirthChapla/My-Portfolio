@@ -1,0 +1,85 @@
+.githubSection {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.purple {
+  color: #576cbc;
+}
+
+.calendarWrapper {
+  display: flex;
+  justify-content: center;   /* Center horizontally */
+  align-items: center;       /* Center vertically if needed */
+  padding: 10px;
+  width: 100%;
+  overflow-x: hidden;        /* Prevent horizontal scroll */
+}
+
+.calendarWrapper svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.calendarWrapper svg {
+  max-width: 100%;
+  height: auto;
+}
+.statsImages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.statsImages img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  background: #181c2f;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .calendarWrapper {
+    padding: 0;
+    width: 100%;
+    overflow-x: auto;      /* Allow horizontal scroll for calendar only */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .calendarWrapper svg {
+    margin-top: 20px;
+    min-width: 350px !important;  /* Minimum width for calendar to not break */
+    max-width: 600px !important;
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+  }
+  .calendarWrapper svg {
+  width: 100% !important;
+  height: auto !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  display: block;
+}
+
+.statsImages img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  background: #181c2f;
+  margin: 0;
+}
+}

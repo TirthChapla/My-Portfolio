@@ -1,5 +1,366 @@
+.aboutSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: 05152d;
+  color: white;
+}
 
-@import "../../vars.css";
+.leftColumn {
+  flex: 1;
+  min-width: 300px;
+  margin-left: 50px;
+}
+
+.purpleBold{
+    background: linear-gradient(90deg, #7b94f8, #576cbc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold
+
+}
+.rightColumn {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.purple {
+  background: linear-gradient(90deg, #7b94f8, #576cbc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.subIntro {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.activityList {
+  list-style: none;
+  padding: 0;
+}
+
+.activityList li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.icon {
+  color: #d79fff;
+}
+
+.skillsRow {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.white {
+  color: white;
+}
+
+.gray {
+  color: #888;
+}
+
+.amber {
+  color: #fbbf24;
+}
+
+.quote {
+  font-style: italic;
+  margin-top: 1rem;
+  color: #ff5f87;
+ 
+}
+
+.footer {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  
+}
+
+/* --- Code Block Styling --- */
+.codeBlock {
+
+  white-space: pre-wrap;
+  word-break: break-word;
+  margin-right: 50px;
+  background: #0a0d37;
+  border-radius: 12px;
+  padding: 1.5rem;
+  z-index: 1;
+  font-family: "Fira Code", monospace;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #fff;
+  position: relative;
+  overflow-x: auto;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Top bar like VS Code window */
+.codeBlock::before {
+  content: "";
+  display: block;
+  height: 32px;
+  background: #0d1224;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.codeBlock::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  width: 42px;
+  height: 12px;
+  background:
+    radial-gradient(circle, #ff5f56 35%, transparent 40%) 0 0,
+    radial-gradient(circle, #ffbd2e 35%, transparent 40%) 14px 0,
+    radial-gradient(circle, #27c93f 35%, transparent 40%) 28px 0;
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+}
+
+/* Syntax highlighting */
+.token-keyword {
+  color: #ff5f87;
+}
+
+.token-string {
+  color: #ecc48d;
+}
+
+.token-property {
+  color: #ffffff;
+}
+
+.token-boolean {
+  color: #ff9d00;
+}
+
+.token-function {
+  color: #27c93f;
+}
+
+.token-this {
+  color: #82aaff;
+}
+
+.token-number {
+  color: #f78c6c;
+}
+
+.token-operator {
+  color: #89ddff;
+}
+
+/* Shift text below the top bar */
+.codeBlock code {
+  display: block;
+  padding-top: 38px;
+}
+
+
+@media screen and (max-width: 900px) {
+  .aboutSection {
+    flex-direction: column;
+    padding: 60px 5%;
+  }
+
+  .leftColumn {
+    width: 100%;
+    margin-left: 0;
+    text-align: left;      /* Ensure text is left-aligned */
+    align-items: flex-start; /* For flex children if any */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .codeBlock {
+    
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the code block horizontally */
+    align-items: center;     /* Center the code block vertically if needed */
+    margin-top: 2rem;
+  }
+}
+
+
+
+/* 
+.aboutSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+  color: var(--color-text);
+  gap: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+
+.aboutSection::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/assets/stars-bg.png") repeat;
+  opacity: 0.15;
+  z-index: -1;
+}
+
+.leftColumn {
+  flex: 1;
+}
+
+.rightColumn {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+  max-width: 450px;
+  animation: float 4s ease-in-out infinite;
+}
+
+
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.purple {
+  background: linear-gradient(90deg, #576cbc, #91aafe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.intro {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.subIntro {
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.activityList {
+  list-style: none;
+  padding: 0;
+  margin: 25px 0;
+}
+
+.activityList li {
+  display: flex;
+  align-items: center;
+  font-size: 1.05rem;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background: rgba(155, 126, 172, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.activityList li:hover {
+  background: rgba(155, 126, 172, 0.25);
+  transform: translateX(5px);
+}
+
+.icon {
+  margin-right: 10px;
+  color: rgb(155, 126, 172);
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.activityList li:hover .icon {
+  transform: scale(1.2) rotate(15deg);
+}
+
+.quote {
+  font-style: italic;
+  color: rgb(155, 126, 172);
+  margin-top: 25px;
+  text-align: center;
+  font-size: 1.05rem;
+}
+
+.footer {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media screen and (max-width: 900px) {
+  .aboutSection {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 5%;
+  }
+
+  .image {
+    max-width: 350px;
+  }
+}
+  */
+
+
+
+
+
+
+
+
+/* @import "../../vars.css";
 
 .container
 {
@@ -103,3 +464,53 @@
         padding-right: 0;
     }
 }
+
+
+
+.introText {
+  color: var(--color-text);
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.purple {
+  color: rgb(155, 126, 172);
+  font-weight: bold;
+}
+
+.cardRow {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: rgba(168, 215, 212, 0.2);
+  border-radius: 12px;
+  padding: 15px 25px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: rgba(168, 215, 212, 0.4);
+}
+
+.cardIcon {
+  color: rgb(155, 126, 172);
+  font-size: 18px;
+}
+
+.quote {
+  color: rgb(155, 126, 172);
+  font-style: italic;
+  margin-top: 25px;
+  text-align: center;
+} */
