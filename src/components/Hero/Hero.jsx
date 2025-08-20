@@ -36,7 +36,7 @@ export const Hero = () => {
                 <Type />
         </div>
         {/* <p className={styles.description}>I'm a Java Fullstack Developer</p> */}
-        <a href="/TirthResume.pdf" download="Tirth Resume.pdf" className={styles.resumeBtn}>
+        <a href="/assets/Tirth_Chapla_resume.pdf" download="Tirth Resume.pdf" className={styles.resumeBtn}>
           Resume
         </a>
       </div>
