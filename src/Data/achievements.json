@@ -34,5 +34,17 @@
     "image": "/assets/achievement/JAVA_SCRIPT.png",
     "title": "Learn JavaScript",
     "description": "I completed the Learn JavaScript course on Coding Sikho."
+  },
+  {
+    "id": 6,
+    "image": "/assets/achievement/JAVA_SCRIPT.png",
+    "title": "Learn JavaScript",
+    "description": "I completed the Learn JavaScript course on Coding Sikho."
+  },
+  {
+    "id": 7,
+    "image": "/assets/achievement/Gold_Codechef.jpeg",
+    "title": "Gold Streak Badge",
+    "description": "I achieved a Gold Streak Badge in CodeChef by consistency in 50 days of practice."
   }
 ]

@@ -6,7 +6,7 @@
       "startDate": "May, 2025",
       "endDate": "Jun,2025",
       "experiences": ["Java , Springboot","Work on the Smart Result"],
-      "imageSrc": "/assets/history/ddu.png"
+      "imageSrc": "/assets/history/HummingByte.png"
     },
     {
       "role": "",
@@ -22,6 +22,6 @@
       "startDate": "Sept, 2024",
       "endDate": "Present",
       "experiences": ["Competitive Programming"],
-      "imageSrc": "/assets/history/CodingSeekho.png"
+      "imageSrc": "/assets/history/ddu.png"
     }
   ]

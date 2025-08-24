@@ -1,6 +1,22 @@
 
 [
     {
+      "title": "SpringBoot",
+      "imageSrc": "/assets/skills/springboot.png"
+    },
+    {
+      "title": "AWS",
+      "imageSrc": "/assets/skills/aws.png"
+    },
+    {
+      "title": "Docker",
+      "imageSrc": "/assets/skills/docker.png"
+    },
+    {
+      "title": "MVC",
+      "imageSrc": "/assets/skills/MVC.png"
+    },
+    {
       "title": "HTML",
       "imageSrc": "/assets/skills/html.png"
     },

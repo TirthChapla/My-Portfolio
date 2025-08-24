@@ -7,3 +7,11 @@
     height: 100%;
     color: white;
 }   
+
+.statsRow {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Allows stacking on small screens */
+}
