@@ -126,3 +126,47 @@
     align-items: center;
   }
 }
+
+.resumeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* space between buttons */
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+  margin-top: 1rem;
+}
+
+.resumeBtn {
+  text-decoration: none;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  border-radius: 100px;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 17px 26px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease;
+}
+
+.resumeBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ✅ Mobile-friendly layout */
+@media screen and (max-width: 830px) {
+  .resumeContainer {
+    flex-direction: row; /* stay side-by-side */
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap; /* allows wrapping if screen is very narrow */
+  }
+
+  .resumeBtn {
+    width: auto; /* don’t stretch full width */
+    text-align: center;
+    font-size: 25px;
+    padding: 12px 22px;
+  }
+}
