@@ -34,7 +34,7 @@
 }
 
 .purple {
-  background: linear-gradient(90deg, #7b94f8, #576cbc);
+  background: linear-gradient(90deg, #425dcd, #576cbc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -48,6 +48,7 @@
 .subIntro {
   font-size: 1.1rem;
   margin-top: 1rem;
+  color: #27c934;
   margin-bottom: 0.5rem;
   font-weight: bold;
 }

@@ -29,20 +29,24 @@ export const About = () => {
         </div>
 
         <p className={styles.subIntro}>
-          Apart from coding, some other activities that I love to do!
+          Am I consistent ?
         </p>
 
-        <ul className={styles.activityList}>
-          <li>
-            <ImPointRight className={styles.icon} /> Watching Movies
-          </li>
-          <li>
-            <ImPointRight className={styles.icon} /> Playing Badminton
-          </li>
-          <li>
-            <ImPointRight className={styles.icon} /> Travelling
-          </li>
-        </ul>
+       <ul className={styles.activityList}>
+  <li>
+    <ImPointRight className={styles.icon} /> 
+    <span style={{ color: "red", fontWeight: "bold" }}>300+</span> days streak on GitHub
+  </li>
+  <li>
+    <ImPointRight className={styles.icon} /> 
+    <span style={{ color: "red", fontWeight: "bold" }}>110+</span> days streak on CodeChef
+  </li>
+  <li>
+    <ImPointRight className={styles.icon} /> 
+    <span style={{ color: "red", fontWeight: "bold" }}>70+</span> days streak on LeetCode
+  </li>
+</ul>
+
 
         
 
