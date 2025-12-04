@@ -52,6 +52,12 @@ export const Hero = () => {
   >
     Github
   </a>
+  <a
+    href="https://www.linkedin.com/in/tirth-chapla-589227297"
+    className={styles.resumeBtn}
+  >
+    Linkedln
+  </a>
 </div>
 
       </div>
