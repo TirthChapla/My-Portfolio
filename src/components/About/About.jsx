@@ -35,7 +35,7 @@ export const About = () => {
        <ul className={styles.activityList}>
   <li>
     <ImPointRight className={styles.icon} /> 
-    <span style={{ color: "red", fontWeight: "bold" }}>355+</span> days streak on GitHub
+    <span style={{ color: "red", fontWeight: "bold" }}>415+</span> days streak on GitHub
   </li>
   <li>
     <ImPointRight className={styles.icon} /> 
@@ -43,7 +43,7 @@ export const About = () => {
   </li>
   <li>
     <ImPointRight className={styles.icon} /> 
-    <span style={{ color: "red", fontWeight: "bold" }}>95+</span> days streak on LeetCode
+    <span style={{ color: "red", fontWeight: "bold" }}>150+</span> days streak on LeetCode
   </li>
 </ul>
 

@@ -1,4 +1,19 @@
-[
+[   {
+      "title": "UDHRP",
+      "imageSrc": "/assets/projects/UDHRP.png",
+      "description": "This project is provide Unified Digital Health Record Platform to patient and the Doctor.",
+      "skills": ["Java", "SpringBoot", "React","AI/ML"],
+      "demo": "n/a",
+      "source": "https://github.com/TirthChapla/UDHRP"
+    },
+    {
+      "title": "UCR",
+      "imageSrc": "/assets/projects/ucr.png",
+      "description": "This project is provide Unified Car Repairs to carowner and the Mechanic.",
+      "skills": ["Java", "SpringBoot", "React","AI/ML"],
+      "demo": "n/a",
+      "source": "n/a"
+    },
     {
       "title": "Smart Resut",
       "imageSrc": "/assets/projects/smartResult.png",
@@ -7,6 +22,7 @@
       "demo": "http://smartresult.eu-north-1.elasticbeanstalk.com/",
       "source": "https://github.com/TirthChapla/Smart-Result"
     },
+
     {
       "title": "NiveshX Treading",
       "imageSrc": "/assets/projects/NiveshX_logo.png",
